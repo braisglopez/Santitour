@@ -1,52 +1,83 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!doctype html>
+<html lang="gl">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap css-->
+    <!-- Bootstrap CSS -->
     <link href="../css/mainbootstrap.css" rel="stylesheet">
-
     <title>SantiTour - a túa páxina de referencia para visitar Santiago de Compostela</title>
-</head>
-
-<body>
-    <header>
-        <h1>SantiTour</h1>
-        <p><img src="../imagenes/inicio/logo.png"></p>
-        <p>A páxina definitiva para visitar a cidade Compostelá</p>
-        <nav>
-            <ul>
-                <li>Info</li>
-                <!--nesta seccion incluense as últimas noticias e un acceso externo a un pouco de historia de Compostela-->
-                <ul>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <!--noticias destacadas da cidade-->
-                    <li><a href="historia.html#historia">Historia</a></li>
-                    <!--historia xeral-->
+  </head>
+  <body class="bg-secondary">
+    <!--<p><img src="../imagenes/inicio/logo.png"></p> -->
+    <div class="page-header">
+        <img src="../imagenes/inicio/novas/descarga.jfif" >
+    </div>
+    <!--Navbar-->
+    <div class="container-fluid navbar-primary bg-primary border-3 border-bottom border-dark">
+        <nav class="navbar navbar-expand-md container">
+              <a class="navbar-brand" href="#">Santitour</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ms-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Info
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Novas</a></li>
+                          <li><a class="dropdown-item" href="#">Historia</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Rutas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Tours</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ocio
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Actividades</a></li>
+                      <li><a class="dropdown-item" href="#">Vida nocturna</a></li>
+                      <li><a class="dropdown-item" href="#">Entretemento</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Que ver
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Monumentos</a></li>
+                      <li><a class="dropdown-item" href="#">Museos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contacta con nós</a>
+                  </li>
                 </ul>
-                <li>Qué ver</li>
-                <!--nesta seccion incluese informacion acerca de monumentos e museos a visitar-->
-                <li>Rutas e tours</li>
-                <!--nesta seccion incluense diferentes itinerarios para realizar en Compostela, xa sea polo casco historico como por montes proximos-->
-                <li>Ocio</li>
-                <!--esta seccion esta comprendida por: actividades deportivas (), vida nocturna (pubs, discotecas...), entretenimiento (cine, teatro...)-->
-                <li>Contacta con nós</li>
-                <!--informacion de contacto-->
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2><a id="noticias">Noticias</a></h2>
-        </section>
-    </main>
     
-    <!--myScripts-->
-    <script src=""></script>
-    <!-- Bootstrap script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+              </div>
+          </nav>
+    </div>
 
-</body>
+    
 
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
