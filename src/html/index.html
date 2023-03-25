@@ -1,78 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="gl">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
-    <link href="../css/mainbootstrap.css" rel="stylesheet">
-    <title>SantiTour - a túa páxina de referencia para visitar Santiago de Compostela</title>
+    <link href="../css/mainbootstrap.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="../css/index.css" rel="stylesheet" />
+    <title>
+      SantiTour - a túa páxina de referencia para visitar Santiago de Compostela
+    </title>
   </head>
-  <body class="bg-secondary">
-    <!--<p><img src="../imagenes/inicio/logo.png"></p> -->
-    <div class="page-header">
-        <img src="../imagenes/inicio/novas/descarga.jfif" >
+  <body>
+    <div
+      class="container-fluid navbar-primary bg-primary border-3 border-bottom border-dark"
+    >
+      <nav class="navbar navbar-expand-md container">
+        <a class="navbar-brand" href="#">Santitour</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Info
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Novas</a></li>
+                <li><a class="dropdown-item" href="#">Historia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Rutas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tours</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ocio
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Actividades</a></li>
+                <li><a class="dropdown-item" href="#">Vida nocturna</a></li>
+                <li><a class="dropdown-item" href="#">Entretemento</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Que ver
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Monumentos</a></li>
+                <li><a class="dropdown-item" href="#">Museos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contacta con nós</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <!--Navbar-->
-    <div class="container-fluid navbar-primary bg-primary border-3 border-bottom border-dark">
-        <nav class="navbar navbar-expand-md container">
-              <a class="navbar-brand" href="#">Santitour</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ms-4">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Info
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Novas</a></li>
-                          <li><a class="dropdown-item" href="#">Historia</a></li>
-                        </ul>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Rutas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Tours</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ocio
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Actividades</a></li>
-                      <li><a class="dropdown-item" href="#">Vida nocturna</a></li>
-                      <li><a class="dropdown-item" href="#">Entretemento</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Que ver
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Monumentos</a></li>
-                      <li><a class="dropdown-item" href="#">Museos</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacta con nós</a>
-                  </li>
-                </ul>
-    
-              </div>
-          </nav>
-    </div>
 
-    
-
-
+    <main class="corpo">
+      <h2><a id="novas">Novas</a></h2>
+      <section class="contenedorcaixas">
+        <article class="caixas">
+          <h3>
+            <a
+              href="https://www.lavozdegalicia.es/noticia/santiago/2023/02/13/detenidos-santiago-dos-individuos-kilo-cocaina/0003_202302202302131676280642298.htm"
+              target="_blank"
+              >Detidos en Santiago dous individuos con un kilo de cocaína</a
+            >
+          </h3>
+          <figure>
+            <img class="img" src="../imagenes/inicio/novas/fotococaina.png" />
+          </figure>
+          <p>
+            A Policía Nacional detivo a dous individuos e incautoulles 1.000
+            gramos de cocaína, dos que sairían 40.000 dosis por un valor de
+            mercado de máis de 50.000 euros. Serán acusados dun presunto delito
+            contra a saúde pública.
+          </p>
+        </article>
+        <article class="caixas">
+          <h3>
+            <a
+              href="https://www.lavozdegalicia.es/noticia/santiago/santiago/2023/02/13/tienda-abierta-santiago-5-metros-cuadrados-acabo-conquistando-tres-ciudades/00031676297712513158334.htm"
+              target="_blank"
+              >A tenda de 5 metros cadrados que acabou conquistando tres
+              cidades</a
+            >
+          </h3>
+          <figure>
+            <img
+              class="img"
+              src="../imagenes/inicio/novas/5metroscadrados.png"
+            />
+          </figure>
+          <p>
+            A tenda Sr.Nilsson ocupaba nos seus inicios uns cinco metros
+            cadrados non dos postos da Praza de Abastos de Santiago. Tras
+            amplicar o local, o establecemento xá está presente hoxe en tres
+            cidades e ten unha clientela fiel.
+          </p>
+        </article>
+        <article class="caixas">
+          <h3>
+            <a
+              href="https://www.lavozdegalicia.es/noticia/santiago/santiago/2023/02/14/visto-bueno-primer-tramo-local-via-verde-cerceda/0003_202302S14C3997.htm"
+              target="_blank"
+              >O concello de Santiago aproba o primeiro tramo local da Vía Verde
+              ata Cerceda</a
+            >
+          </h3>
+          <figure>
+            <img src="../imagenes/inicio/novas/tramocerceda.png" />
+          </figure>
+          <p>
+            A Xunta de Goberno aprobou o proxecto constructivo do primeiro tramo
+            compostelá da Vía Verde Santiago-Cerceda na que faltan por executar
+            12 kilómetros capitalinos.
+          </p>
+        </article>
+        <article class="caixas">
+          <h3>
+            <a
+              href="https://www.lavozdegalicia.es/noticia/santiago/santiago/2023/02/13/lazos-dorados-corte-ingles-santiago-apoyo-lucha-contra-cancer-infantil/00031676305794564828196.htm"
+              target="_blank"
+              >Lazos dourados no Corte Inglés en apoio á loita contra o cancro
+              infantil</a
+            >
+          </h3>
+          <figure>
+            <img
+              class="img"
+              src="../imagenes/inicio/novas/lazoscorteingles.png"
+            />
+          </figure>
+          <p>
+            Co motivo da celebración do Día Mundial Contra o Cancro Infantil,
+            chegou un cargamento de lazos dourados ao Corte Inglés de Santiago.
+          </p>
+        </article>
+      </section>
+    </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
