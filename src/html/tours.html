@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplo de barra al pasar el ratón</title>
+    <link href="../css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>
+      Esta es una palabra con
+      <span class="underline" id="palabra">subrayado</span>.
+    </p>
+
+    <script>
+      const palabra = document.getElementById("palabra");
+
+      palabra.addEventListener("mouseover", () => {
+        palabra.classList.add("underline");
+      });
+
+      palabra.addEventListener("mouseout", () => {
+        palabra.classList.remove("underline");
+      });
+    </script>
+  </body>
+</html>
