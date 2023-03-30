@@ -1,3 +1,16 @@
+h3 {
+  text-align: left;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-left: 6%;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
 #contenido1 {
   display: none;
 }
@@ -8,4 +21,40 @@
 
 #contenido3 {
   display: none;
+}
+
+#expandir1 {
+  background-color: rgb(225, 181, 136);
+  color: black;
+  border-radius: 15px;
+}
+
+#expandir1:hover {
+  transition: .7s;
+  background-color: black;
+  color: rgb(225, 181, 136);
+}
+
+#expandir2 {
+  background-color: rgb(225, 181, 136);
+  color: black;
+  border-radius: 15px;
+}
+
+#expandir2:hover {
+  transition: .7s;
+  background-color: black;
+  color: rgb(225, 181, 136);
+}
+
+#expandir3 {
+  background-color: rgb(225, 181, 136);
+  color: black;
+  border-radius: 15px;
+}
+
+#expandir3:hover {
+  transition: .7s;
+  background-color: black;
+  color: rgb(225, 181, 136);
 }

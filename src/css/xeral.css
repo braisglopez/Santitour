@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(225, 181, 136);
+}
+
 h1 {
   font-size: 35px;
   font-weight: bold;
@@ -23,6 +27,7 @@ h2 {
 p {
   margin: 3% 6% 3% 6%;
   text-align: justify;
+  /*font-weight: bolder;*/
 }
 
 .link-inicio {
