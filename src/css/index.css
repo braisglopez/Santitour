@@ -24,7 +24,7 @@
 }
 
 .caixas {
-  background-color: white;
+  background-color: rgb(220, 220, 220);
   width: 40%;
   height: 40%;
   margin: 40px 70px 70px 70px;
@@ -43,7 +43,7 @@
 .caixas h3 {
   padding: 10px;
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, Geneva, Arial, sans-serif;
 }
 
 .caixas p {

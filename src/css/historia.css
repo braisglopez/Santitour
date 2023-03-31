@@ -24,37 +24,40 @@ ul {
 }
 
 #expandir1 {
-  background-color: rgb(225, 181, 136);
+  background-color: white;
   color: black;
   border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #expandir1:hover {
-  transition: .7s;
+  transition: .5s;
   background-color: black;
-  color: rgb(225, 181, 136);
+  color: white;
 }
 
 #expandir2 {
-  background-color: rgb(225, 181, 136);
+  background-color: white;
   color: black;
   border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 #expandir2:hover {
-  transition: .7s;
+  transition: .5s;
   background-color: black;
-  color: rgb(225, 181, 136);
+  color: white;
 }
 
 #expandir3 {
-  background-color: rgb(225, 181, 136);
+  background-color: white;
   color: black;
   border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 #expandir3:hover {
-  transition: .7s;
+  transition: .5s;
   background-color: black;
-  color: rgb(225, 181, 136);
+  color: white;
 }

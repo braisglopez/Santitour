@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(225, 181, 136);
+  background-color: white;
 }
 
 h1 {
@@ -22,9 +22,12 @@ h2 {
   margin-top: 15px;
   margin-bottom: 10px;
   text-align: center;
+  font-family: Georgia, Geneva, Arial, sans-serif;
 }
 
 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
   margin: 3% 6% 3% 6%;
   text-align: justify;
   /*font-weight: bolder;*/

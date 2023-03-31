@@ -50,6 +50,8 @@
 }
 
 .carta .trasera {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
   background: rgb(3, 35, 34);
@@ -62,6 +64,10 @@
   box-shadow: 0 5px 10px black;
 }
 
+.carta .trasera p {
+  font-size: 15px;
+}
+
 .carta .trasera .enlace {
   border-top: solid 1px white;
   height: 50px;
@@ -72,7 +78,12 @@
   color: white;
 }
 
+.carta .trasera .enlace a:hover {
+  text-decoration: underline;
+}
+
 .carta .trasera h3 {
+  font-family: Georgia, Geneva, Arial, sans-serif;
   font-size: 30px;
   margin-top: 20px;
 }
