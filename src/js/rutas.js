@@ -1,3 +1,5 @@
+cargarRutas();
+
 var icono = L.Icon.extend({
   options: {
     shadowUrl: "../imagenes/rutas_tours/sombra-logo.svg",
@@ -73,3 +75,52 @@ var marker4 = L.marker([42.807091, -8.446954], { icon: iconoCiclismo1 })
   .addEventListener("mouseout", () => {
     marker4.setIcon(iconoCiclismo1);
   });
+
+function cargarRutas() {
+  fetch("../../baseDatos/rutas.json").then((Response) => {
+    Response.json().then(mostrarRutas);
+  });
+}
+
+function mostrarRutas(jsonObj) {
+  let rutas = "";
+  for (x in jsonObj.Rutas) {
+    rutas +=
+      '<div class="ruta">' +
+      '<article class="cuadroslaterais">' +
+      "<h3>" +
+      jsonObj.Rutas[x].titulo +
+      "</h3>" +
+      "<p>" +
+      jsonObj.Rutas[x].descripcion +
+      "</p>" +
+      '<section class="cuadrosinteriores">' +
+      '<div class="cuadrointerior">' +
+      '<h4 style="font-weight: bold">Distancia</h4>' +
+      "<h4>" +
+      jsonObj.Rutas[x].distancia +
+      "</h4>" +
+      "</div>" +
+      '<div class="cuadrointerior">' +
+      '<h4 style="font-weight: bold">Desnivel +</h4>' +
+      "<h4>" +
+      jsonObj.Rutas[x].desnivel +
+      "</h4>" +
+      "</div>" +
+      '<div class="cuadrointerior">' +
+      '<h4 style="font-weight: bold">Valoración</h4>' +
+      "<h4>" +
+      jsonObj.Rutas[x].valoracion +
+      "</h4>" +
+      "</section>" +
+      "</article>" +
+      '<figure class="imaxe">' +
+      "<img src=" +
+      jsonObj.Rutas[x].imaxe +
+      " />" +
+      "</figure>" +
+      "</div>";
+  }
+
+  document.getElementById("contenedorRutas").innerHTML = rutas;
+}

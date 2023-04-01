@@ -1,0 +1,36 @@
+{
+  "Rutas": [
+    {
+      "titulo": "Camino de Santiago Inglés, completo: Ferrol-Santiago de Compostela",
+      "descripcion": "Camino de Santiago Inglés completo, desde Ferrol a Santiago de Compostela, bien señalizado en general, con 121,78 kms., con un IBP Index medio diario de 62,40 y realizado en 6 etapas.",
+      "distancia": "21,78 km",
+      "desnivel": "2118 m",
+      "valoracion": "4,63",
+      "imaxe": "../imagenes/rutas_tours/ruta1.jpg"
+    },
+    {
+      "titulo": "Paseo Río Sarela, Selva Negra, Santiago de Compostela",
+      "descripcion": "Ruta que tiene como protagonistas tierras de Santiago de Compostela. Dejar coches cerca de la cuesta del Convento de San francisco en donde se dispone de amplio aparcamiento. Llegar a la Plaza del Obradoiro y disfrutar de la fachada de la catedral.",
+      "distancia": "11,39 km",
+      "desnivel": "627 m",
+      "valoracion": "4,8",
+      "imaxe": "../imagenes/rutas_tours/ruta2.jpg"
+    },
+    {
+      "titulo": "CAMINO PRIMITIVO 5. A Lavacolla-Monte do Gozo- Santiago de Compostela",
+      "descripcion": "Se inicia la andadura en la Iglesia Parroquial de San Paio de Sabugueira, en Lavacolla. Posteriormente se cruzará el Rio Lavacolla y se subirá hasta Vilamaior y después Neiro. Luego se pasa por las instalaciones de la Televisión Gallega, punto más alto de la etapa. Desde este monte ya podemos ver la Catedral de Santiago a unos 5 kilómetros.",
+      "distancia": "11,92 km",
+      "desnivel": "146 m",
+      "valoracion": "5",
+      "imaxe": "../imagenes/rutas_tours/ruta3.jpg"
+    },
+    {
+      "titulo": "Santiago de Compostela - Pico Sacro",
+      "descripcion": "La ida se hace, en sentido inverso, por el último tramo de la Vía de la Plata, en su variante Sanabresa, la ruta de peregrinación que parte de Sevilla. La vuelta a Santiago se hace por la AC-261, con 10 Kms adicionales desde el último punto descrito en la ruta.",
+      "distancia": "25,72 km",
+      "desnivel": "625 m",
+      "valoracion": "4,6",
+      "imaxe": "../imagenes/rutas_tours/ruta4.jpg"
+    }
+  ]
+}
