@@ -8,9 +8,18 @@ h4 {
 
 .cuadroxeral {
   display: flex;
+  flex-direction: row;
+}
+
+.cuadroesquerda {
+  display: flex;
   flex-flow: column wrap;
   margin: 50px;
   width: 50%;
+}
+
+#map {
+  width: 100vh;
 }
 .ruta {
   display: flex;

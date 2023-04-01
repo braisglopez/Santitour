@@ -1,36 +1,23 @@
-document.getElementById("expandir1").addEventListener("click", function () {
-  var contenido = document.getElementById("contenido1");
+function vermais(contenido, boton) {
   // window.getComputedStyle devolve un obxeto que representa o estilo calculado dun elemento
   var estilo = window.getComputedStyle(contenido);
   if (estilo.display === "none") {
     contenido.style.display = "block";
-    this.innerHTML = "Ler menos";
+    boton.innerHTML = "Ler menos";
   } else {
     contenido.style.display = "none";
-    this.innerHTML = "Ler máis";
+    boton.innerHTML = "Ler máis";
   }
+}
+
+document.getElementById("expandir1").addEventListener("click", (e) => {
+  vermais(document.getElementById("contenido1"), e.target);
 });
 
-document.getElementById("expandir2").addEventListener("click", function () {
-  var contenido = document.getElementById("contenido2");
-  var estilo = window.getComputedStyle(contenido);
-  if (estilo.display === "none") {
-    contenido.style.display = "block";
-    this.innerHTML = "Ler menos";
-  } else {
-    contenido.style.display = "none";
-    this.innerHTML = "Ler máis";
-  }
+document.getElementById("expandir2").addEventListener("click", (e) => {
+  vermais(document.getElementById("contenido2"), e.target);
 });
 
-document.getElementById("expandir3").addEventListener("click", function () {
-  var contenido = document.getElementById("contenido3");
-  var estilo = window.getComputedStyle(contenido);
-  if (estilo.display === "none") {
-    contenido.style.display = "block";
-    this.innerHTML = "Ler menos";
-  } else {
-    contenido.style.display = "none";
-    this.innerHTML = "Ler máis";
-  }
+document.getElementById("expandir3").addEventListener("click", (e) => {
+  vermais(document.getElementById("contenido3"), e.target);
 });
