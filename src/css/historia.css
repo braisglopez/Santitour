@@ -31,7 +31,7 @@ ul {
 }
 
 #expandir1:hover {
-  transition: .5s;
+  transition: 0.5s;
   background-color: black;
   color: white;
 }
@@ -40,11 +40,11 @@ ul {
   background-color: white;
   color: black;
   border-radius: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #expandir2:hover {
-  transition: .5s;
+  transition: 0.5s;
   background-color: black;
   color: white;
 }
@@ -53,11 +53,11 @@ ul {
   background-color: white;
   color: black;
   border-radius: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #expandir3:hover {
-  transition: .5s;
+  transition: 0.5s;
   background-color: black;
   color: white;
 }
