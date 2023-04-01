@@ -1,0 +1,24 @@
+.cuadroxeral {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+  margin: 10px;
+}
+
+.cuadroslaterais {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.cuadroslaterais p {
+  margin: 0%;
+}
+
+.cuadroslaterais h3 {
+  margin: 0%;
+}
