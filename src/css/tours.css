@@ -6,6 +6,9 @@
   gap: 1rem;
   padding: 3rem;
 }
+p {
+  margin: 2% 6% 3% 6%;
+}
 
 .caja-grande > * {
   flex-basis: 100%;
@@ -37,43 +40,3 @@
   height: 200px;
   margin: 0% 6% 3% 18%;
 }
-/*
-.imaxe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin: 0% 6% 3% 18%;
-}
-
-.imaxe-galeria {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
-}
-
-.imaxe-galeria.mostrando {
-  opacity: 1;
-}
-
-.imaxe2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin: 0% 6% 3% 18%;
-}
-
-.imaxe-galeria2 {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
-}
-
-.imaxe-galeria2.mostrando {
-  opacity: 1;
-}*/

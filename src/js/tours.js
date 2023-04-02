@@ -37,12 +37,6 @@ function cargarTours() {
           '<img src="' +
           tours[i].getElementsByTagName("IMAXE1")[0].textContent +
           '" class="imaxe-galeria" />' +
-          /*'<img src="' +
-          tours[i].getElementsByTagName("IMAXE2")[0].textContent +
-          '" class="imaxe-galeria" />' +
-          '<img src="' +
-          tours[i].getElementsByTagName("IMAXE3")[0].textContent +
-          '" class="imaxe-galeria" />' +*/
           "</div>" +
           "</div>" +
           "</div>";
@@ -55,84 +49,3 @@ function cargarTours() {
 }
 
 cargarTours();
-/*
-const imagenes = document.querySelectorAll(".imaxe-galeria");
-const imagenes2 = document.querySelectorAll(".imaxe-galeria2");
-//const imagenes3 = document.querySelectorAll(".imaxe-galeria3");
-const intervalo = 4000; // 4 segundos
-
-let indice = 0;
-
-function mostrarImagen() {
-  console.log(imagenes[indice]);
-  imagenes[indice].classList.add("mostrando");
-  setTimeout(() => {
-    imagenes[indice].classList.remove("mostrando");
-    indice++;
-    if (indice >= imagenes.length) {
-      indice = 0;
-    }
-    mostrarImagen();
-  }, intervalo);
-}
-
-let indice2 = 0;
-
-function mostrarImagen2() {
-  imagenes2[indice2].classList.add("mostrando");
-  setTimeout(() => {
-    imagenes2[indice2].classList.remove("mostrando");
-    indice2++;
-    if (indice2 >= imagenes2.length) {
-      indice2 = 0;
-    }
-    mostrarImagen2();
-  }, intervalo);
-}
-
-mostrarImagen();
-mostrarImagen2();
-
-let indice3 = 0;
-
-function mostrarImagen3() {
-  imagenes3[indice3].classList.add("mostrando");
-  setTimeout(() => {
-    imagenes3[indice3].classList.remove("mostrando");
-    indice3++;
-    if (indice3 >= imagenes3.length) {
-      indice3 = 0;
-    }
-    mostrarImagen3();
-  }, intervalo);
-}
-
-
-mostrarImagen3();
-
-const imagenes = $('.imaxe-galeria');
-const imagenes2 = $('.imaxe-galeria2');
-const imagenes3 = $('.imaxe-galeria3');
-const intervalo = 4000;
-
-function mostrarImagenes(imagenes, indice) {
-  imagenes.eq(indice).addClass('mostrando');
-  setTimeout(() => {
-    imagenes.eq(indice).removeClass('mostrando');
-    mostrarImagenes(imagenes, (indice + 1) % imagenes.length);
-  }, intervalo);
-}
-
-mostrarImagenes(imagenes, 0);
-mostrarImagenes(imagenes2, 0);
-mostrarImagenes(imagenes3, 0);
-
-Explicación: En este código, en lugar de utilizar document.querySelectorAll, usamos la función $ de jQuery para seleccionar las imágenes con la clase correspondiente.
-
-Luego, creamos una función mostrarImagenes que toma dos argumentos: las imágenes a mostrar y el índice de la imagen actual. Utilizamos el método eq de jQuery para obtener el elemento correspondiente al índice actual y añadimos la clase "mostrando".
-
-En lugar de tener tres funciones mostrarImagen, utilizamos un único llamado a la función mostrarImagenes para cada grupo de imágenes, pasando las imágenes y el índice inicial correspondiente. Además, en lugar de utilizar variables globales para el índice, utilizamos el operador módulo % para obtener el siguiente índice de forma circular.
-
-Finalmente, eliminamos la variable intervalo y utilizamos directamente el valor numérico correspondiente en el código.
-
-De esta manera, hemos optimizado y simplificado el código utilizando las funciones y métodos de jQuery.*/
