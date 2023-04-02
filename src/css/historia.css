@@ -1,14 +1,6 @@
 h3 {
   text-align: left;
   font-size: 24px;
-  margin-top: 30px;
-  margin-left: 6%;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-  text-align: center;
 }
 
 #contenido1 {
@@ -23,41 +15,20 @@ ul {
   display: none;
 }
 
-#expandir1 {
+.expandir {
   background-color: white;
   color: black;
-  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#expandir1:hover {
+.expandir:hover {
   transition: 0.5s;
   background-color: black;
   color: white;
 }
 
-#expandir2 {
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#expandir2:hover {
-  transition: 0.5s;
-  background-color: black;
-  color: white;
-}
-
-#expandir3 {
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#expandir3:hover {
-  transition: 0.5s;
-  background-color: black;
-  color: white;
+aside {
+  height: 300px;
 }

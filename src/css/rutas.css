@@ -9,25 +9,26 @@ h4 {
 .cuadroxeral {
   display: flex;
   flex-direction: row;
+  padding: 5px 0 0 0;
 }
 
 .cuadroesquerda {
   display: flex;
-  flex-flow: column wrap;
-  margin: 50px;
+  flex-flow: column;
+  gap: 10px;
   width: 50%;
+  overflow-y: auto;
+  padding: 7px 20px 5px 20px;
+  background-color: #f2f2f2;
 }
 
 #map {
-  height: 100vh;
   width: 50%;
   display: block;
-  padding: 10px;
 }
 .ruta {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
   background-color: black;
   padding: 0;
@@ -35,8 +36,8 @@ h4 {
 }
 
 .ruta:hover {
-  transform: scale(1.05);
-  box-shadow: 13px 15px 37px black;
+  transform: scale(1.01);
+  box-shadow: 2px 2px 10px black;
 }
 
 .cuadroslaterais {
@@ -48,6 +49,11 @@ h4 {
   height: 217px;
   padding: 10px;
   margin: 0;
+}
+
+.i {
+  width: 15px;
+  height: 15px;
 }
 .imaxe {
   width: 217px;
@@ -82,5 +88,9 @@ h4 {
   }
   #map {
     display: none;
+  }
+
+  .cuadroesquerda {
+    width: 100%;
   }
 }

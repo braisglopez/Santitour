@@ -1,4 +1,9 @@
-cargarRutas();
+var mapa = document.getElementById("map");
+var cadroEsquerda = document.getElementById("contenedorRutas");
+
+altura = window.innerHeight - mapa.getBoundingClientRect().top;
+mapa.style.height = altura + "px";
+cadroEsquerda.style.height = altura + "px";
 
 var icono = L.Icon.extend({
   options: {
@@ -31,50 +36,56 @@ var iconoCiclismo1 = new icono({
     shadowAnchor: [19, 19],
   });
 
-var map = L.map("map").setView([42.880468, -8.545556], 9);
+var iconoActivo = L.Icon.extend({
+  options: {
+    shadowUrl: "../imagenes/rutas_tours/sombra-logo-activo.svg",
+    iconSize: [38, 38], // size of the icon
+    iconAnchor: [19, 28], // point of the icon which will correspond to marker's location
+    popupAnchor: [-15, -40], // point from which the popup should open relative to the iconAnchor
+  },
+});
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+var iconoAndarActivo1 = new iconoActivo({
+  iconUrl: "../imagenes/rutas_tours/logo-senderismo-activo.svg",
+  shadowSize: [42, 42],
+  shadowAnchor: [21, 30],
+});
+
+var iconoCiclismoActivo1 = new iconoActivo({
+  iconUrl: "../imagenes/rutas_tours/logo-ciclismo-activo.svg",
+  shadowSize: [42, 42],
+  shadowAnchor: [21, 30],
+});
+
+openStreetMaps = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
-  attribution: "",
-}).addTo(map);
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+});
 
-map.attributionControl.setPrefix("");
+googleHybrid = L.tileLayer(
+  "http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}",
+  {
+    maxZoom: 20,
+    subdomains: ["mt0", "mt1", "mt2", "mt3"],
+  }
+);
 
-var marker = L.marker([43.478916, -8.244463], { icon: iconoAndar1 })
-  .addTo(map)
-  .addEventListener("mouseover", () => {
-    marker.setIcon(iconoAndar2);
-  })
-  .addEventListener("mouseout", () => {
-    marker.setIcon(iconoAndar1);
-  });
+googleSat = L.tileLayer("http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", {
+  maxZoom: 20,
+  subdomains: ["mt0", "mt1", "mt2", "mt3"],
+});
 
-var marker2 = L.marker([42.884852, -8.549493], { icon: iconoAndar1 })
-  .addTo(map)
-  .addEventListener("mouseover", () => {
-    marker2.setIcon(iconoAndar2);
-  })
-  .addEventListener("mouseout", () => {
-    marker2.setIcon(iconoAndar1);
-  });
+var baseMaps = {
+  Rúas: openStreetMaps,
+  Híbrido: googleHybrid,
+  Satélite: googleSat,
+};
 
-var marker3 = L.marker([42.898786, -8.444581], { icon: iconoAndar1 })
-  .addTo(map)
-  .addEventListener("mouseover", () => {
-    marker3.setIcon(iconoAndar2);
-  })
-  .addEventListener("mouseout", () => {
-    marker3.setIcon(iconoAndar1);
-  });
+senderismo = L.layerGroup([]);
+ciclismo = L.layerGroup([]);
 
-var marker4 = L.marker([42.807091, -8.446954], { icon: iconoCiclismo1 })
-  .addTo(map)
-  .addEventListener("mouseover", () => {
-    marker4.setIcon(iconoCiclismo2);
-  })
-  .addEventListener("mouseout", () => {
-    marker4.setIcon(iconoCiclismo1);
-  });
+cargarRutas();
 
 function cargarRutas() {
   fetch("../../baseDatos/rutas.json").then((Response) => {
@@ -86,7 +97,20 @@ function mostrarRutas(jsonObj) {
   let rutas = "";
   for (x in jsonObj.Rutas) {
     rutas +=
-      '<div class="ruta">' +
+      '<div class="ruta" onMouseOver=\'mouseOver("' +
+      jsonObj.Rutas[x].tipo +
+      '",' +
+      jsonObj.Rutas[x].coordenadas[0] +
+      "," +
+      jsonObj.Rutas[x].coordenadas[1] +
+      ")' " +
+      "onMouseOut='mouseOut(\"" +
+      jsonObj.Rutas[x].tipo +
+      '",' +
+      jsonObj.Rutas[x].coordenadas[0] +
+      "," +
+      jsonObj.Rutas[x].coordenadas[1] +
+      ")'>" +
       '<article class="cuadroslaterais">' +
       "<h3>" +
       jsonObj.Rutas[x].titulo +
@@ -111,7 +135,7 @@ function mostrarRutas(jsonObj) {
       '<h4 style="font-weight: bold">Valoración</h4>' +
       "<h4>" +
       jsonObj.Rutas[x].valoracion +
-      "</h4>" +
+      ' | <img class="i" src="../imagenes/rutas_tours/star.svg"> </h4>' +
       "</section>" +
       "</article>" +
       '<figure class="imaxe">' +
@@ -120,7 +144,89 @@ function mostrarRutas(jsonObj) {
       " />" +
       "</figure>" +
       "</div>";
+
+    var marker;
+
+    // Establecemos un marcador coas coordenadas da ruta
+    if (jsonObj.Rutas[x].tipo === "senderismo") {
+      marker = L.marker(
+        [jsonObj.Rutas[x].coordenadas[0], jsonObj.Rutas[x].coordenadas[1]],
+        { icon: iconoAndar1 }
+      )
+        .addEventListener("mouseover", (e) => {
+          e.target.setIcon(iconoAndar2);
+        })
+        .addEventListener("mouseout", (e) => {
+          e.target.setIcon(iconoAndar1);
+        });
+
+      senderismo.addLayer(marker);
+    } else {
+      marker = L.marker(
+        [jsonObj.Rutas[x].coordenadas[0], jsonObj.Rutas[x].coordenadas[1]],
+        { icon: iconoCiclismo1 }
+      )
+        .addEventListener("mouseover", (e) => {
+          e.target.setIcon(iconoCiclismo2);
+        })
+        .addEventListener("mouseout", (e) => {
+          e.target.setIcon(iconoCiclismo1);
+        });
+      ciclismo.addLayer(marker);
+    }
   }
 
-  document.getElementById("contenedorRutas").innerHTML = rutas;
+  var contenedor = document.getElementById("contenedorRutas");
+  contenedor.innerHTML = rutas;
+}
+
+var overlayLayers = {
+  Senderismo: senderismo,
+  Ciclismo: ciclismo,
+};
+
+var map = L.map("map", {
+  center: [43.0, -8.57],
+  zoom: 9,
+  layers: [openStreetMaps, senderismo, ciclismo],
+});
+
+L.control.layers(baseMaps, overlayLayers).addTo(map);
+
+map.attributionControl.setPrefix("");
+
+function mouseOver(tipo, lat, lng) {
+  var allMarkers;
+  if (tipo === "senderismo") {
+    allMarkers = senderismo.getLayers();
+    var icono = iconoAndarActivo1;
+  } else {
+    allMarkers = ciclismo.getLayers();
+    console.log("ciclismo");
+    var icono = iconoCiclismoActivo1;
+  }
+
+  allMarkers.forEach(function (layer) {
+    if (layer.getLatLng().lat === lat && layer.getLatLng().lng === lng) {
+      layer.setIcon(icono);
+    }
+  });
+}
+
+function mouseOut(tipo, lat, lng) {
+  var allMarkers;
+  if (tipo === "senderismo") {
+    allMarkers = senderismo.getLayers();
+    var icono = iconoAndar1;
+  } else {
+    allMarkers = ciclismo.getLayers();
+    console.log("ciclismo");
+    var icono = iconoCiclismo1;
+  }
+
+  allMarkers.forEach(function (layer) {
+    if (layer.getLatLng().lat === lat && layer.getLatLng().lng === lng) {
+      layer.setIcon(icono);
+    }
+  });
 }

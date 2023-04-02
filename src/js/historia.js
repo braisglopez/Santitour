@@ -21,3 +21,7 @@ document.getElementById("expandir2").addEventListener("click", (e) => {
 document.getElementById("expandir3").addEventListener("click", (e) => {
   vermais(document.getElementById("contenido3"), e.target);
 });
+
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: "#historia",
+});

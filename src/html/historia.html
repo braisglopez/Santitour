@@ -21,7 +21,7 @@
       <!--barra de navegacion-->
       <div class="container-fluid nabvar navbar-dark bg-dark sticky-top">
         <div class="text-center">
-          <h1><a class="link-inicio" href="index.html">Santitour</a></h1>
+          <h1><a class="link-inicio" href="../../index.html">Santitour</a></h1>
         </div>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark underline">
           <button
@@ -53,7 +53,7 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a class="colorblanco dropdown-item" href="index.html"
+                    <a class="colorblanco dropdown-item" href="../../index.html"
                       >Novas</a
                     >
                   </li>
@@ -86,18 +86,15 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a class="colorblanco dropdown-item" href="#"
+                    <a class="colorblanco dropdown-item" href="actividades.html"
                       >Actividades</a
                     >
                   </li>
                   <li>
-                    <a class="colorblanco dropdown-item" href="#"
+                    <a
+                      class="colorblanco dropdown-item"
+                      href="vida_nocturna.html"
                       >Vida nocturna</a
-                    >
-                  </li>
-                  <li>
-                    <a class="colorblanco dropdown-item" href="#"
-                      >Entretemento</a
                     >
                   </li>
                 </ul>
@@ -145,124 +142,134 @@
         </nav>
       </div>
     </header>
-    <main>
-      <h2><a id="historia">Historia</a></h2>
-      <section>
-        <ul>
-          <li>
-            <h3>A cidade Compostelá</h3>
-            <p>
-              A cidade antiga de Santiago é patrimonio da Humanidade pola Unesco
-              dende 1985. Destaca por ser uns dos tres grandes núcleos de
-              peregrinación do Cristianismo, junto con Xerusalén e Roma, neste
-              caso por sinalar a tradición que nesta cidade se deu sepultura ao
-              apóstolo Santiago O Maior. De especial importancia é a súa
-              catedral, dedicada precisamente ao apóstolo Santiago, e que é
-              destino de miles de peregrinos de todo o mundo que cada ano
-              realizan O Camiño de Santiago.
-            </p>
-          </li>
-          <li>
-            <h3>Época Romana</h3>
-            <p>
-              A historia de Santiago de Compostela remóntase á época romana,
-              cando a cidade era coñecida como "Aeminium". Durante este tempo, a
-              cidade era un importante centro comercial e político, con unha
-              próspera comunidade romana que deixou a súa pegada na cidade a
-              través da arquitectura e das tradicións culturais.
-            </p>
-            <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
-            <div id="contenido1">
-              <p>
-                Os romanos fundaron Aeminium no século I a.C., e a cidade
-                rapidamente converteuse nun importante centro comercial e de
-                transporte, grazas á súa localización estratéxica no noroeste da
-                Península Ibérica. Os romanos construíron un complexo sistema de
-                rúas empedradas e acuedutos para abastecer á cidade de auga, e
-                tamén ergueron edificios importantes, como templos, baños
-                públicos e teatros.
-              </p>
+    <main class="row me-0 px-5 justify-content-center mb-5">
+      <h2 class="col-12 my-5"><a id="historia">Historia</a></h2>
 
-              <p>
-                No século III d.C., Aeminium foi invadida polos bárbaros, e a
-                cidade entrou nun período de declive. Con todo, a pesar das
-                dificultades, a cidade continuou a ser un importante centro
-                comercial e político, e os romanos deixaron un legado duradeiro
-                na cidade a través da súa arquitectura e cultura.
-              </p>
-            </div>
-            <button id="expandir1">Ler máis</button>
-          </li>
+      <aside
+        id="list-example"
+        class="pt-5 list-group col-md-4 sticky-top zindex-sticky"
+      >
+        <a class="list-group-item list-group-item-action" href="#list-item-1"
+          >A cidade compostelá</a
+        >
+        <a class="list-group-item list-group-item-action" href="#list-item-2"
+          >Época Romana</a
+        >
+        <a class="list-group-item list-group-item-action" href="#list-item-3"
+          >Época Medieval</a
+        >
+        <a class="list-group-item list-group-item-action" href="#list-item-4"
+          >Época Moderna e Contemporánea</a
+        >
+      </aside>
+      <section
+        class="col-md-6"
+        data-bs-spy="scroll"
+        data-bs-target="#historia"
+        data-bs-offset="0"
+        class="scrollspy-example"
+        tabindex="0"
+      >
+        <h3 id="list-item-1">A cidade Compostelá</h3>
+        <p>
+          A cidade antiga de Santiago é patrimonio da Humanidade pola Unesco
+          dende 1985. Destaca por ser uns dos tres grandes núcleos de
+          peregrinación do Cristianismo, junto con Xerusalén e Roma, neste caso
+          por sinalar a tradición que nesta cidade se deu sepultura ao apóstolo
+          Santiago O Maior. De especial importancia é a súa catedral, dedicada
+          precisamente ao apóstolo Santiago, e que é destino de miles de
+          peregrinos de todo o mundo que cada ano realizan O Camiño de Santiago.
+        </p>
+        <h3 id="list-item-2" class="mt-5">Época Romana</h3>
+        <p>
+          A historia de Santiago de Compostela remóntase á época romana, cando a
+          cidade era coñecida como "Aeminium". Durante este tempo, a cidade era
+          un importante centro comercial e político, con unha próspera
+          comunidade romana que deixou a súa pegada na cidade a través da
+          arquitectura e das tradicións culturais.
+        </p>
+        <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
+        <div id="contenido1">
+          <p>
+            Os romanos fundaron Aeminium no século I a.C., e a cidade
+            rapidamente converteuse nun importante centro comercial e de
+            transporte, grazas á súa localización estratéxica no noroeste da
+            Península Ibérica. Os romanos construíron un complexo sistema de
+            rúas empedradas e acuedutos para abastecer á cidade de auga, e tamén
+            ergueron edificios importantes, como templos, baños públicos e
+            teatros.
+          </p>
 
-          <li>
-            <h3>Época Medieval</h3>
-            <p>
-              A segunda etapa importante na historia de Santiago de Compostela
-              comezou no século IX, cando se descubriron os restos do apóstolo
-              Santiago. A partir de entón, a cidade converteuse nun lugar de
-              peregrinación importante para os cristiáns de toda Europa, e o
-              Camiño de Santiago converteuse nunha das rutas de peregrinación
-              máis famosas do mundo. Durante esta época, construíuse a catedral
-              de Santiago de Compostela, que se converteu no centro da vida
-              relixiosa e cultural da cidade.
-            </p>
-            <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
-            <div id="contenido2">
-              <p>
-                O descubrimento dos restos de Santiago no século IX transformou
-                a cidade de Santiago de Compostela dunha vila pequena nunha
-                importante cidade de peregrinación. Miles de peregrinos de toda
-                Europa viaxaron a Santiago de Compostela para venerar os restos
-                do apóstolo Santiago e recibir a indulxencia plenaria. A
-                construción da catedral de Santiago de Compostela comezou no
-                século XI, e a igrexa converteuse no centro da vida relixiosa e
-                cultural da cidade.
-              </p>
+          <p>
+            No século III d.C., Aeminium foi invadida polos bárbaros, e a cidade
+            entrou nun período de declive. Con todo, a pesar das dificultades, a
+            cidade continuou a ser un importante centro comercial e político, e
+            os romanos deixaron un legado duradeiro na cidade a través da súa
+            arquitectura e cultura.
+          </p>
+        </div>
+        <button class="expandir" id="expandir1">Ler máis</button>
 
-              <p>
-                Durante a Idade Media, Santiago de Compostela converteuse nun
-                importante centro de aprendizaxe e cultura. A Universidade de
-                Santiago de Compostela foi fundada en 1495, e a cidade
-                converteuse nun importante centro de estudo da literatura, da
-                filosofía e da teoloxía.
-              </p>
-            </div>
-            <button id="expandir2">Ler máis</button>
-          </li>
+        <h3 id="list-item-3" class="mt-5">Época Medieval</h3>
+        <p>
+          A segunda etapa importante na historia de Santiago de Compostela
+          comezou no século IX, cando se descubriron os restos do apóstolo
+          Santiago. A partir de entón, a cidade converteuse nun lugar de
+          peregrinación importante para os cristiáns de toda Europa, e o Camiño
+          de Santiago converteuse nunha das rutas de peregrinación máis famosas
+          do mundo. Durante esta época, construíuse a catedral de Santiago de
+          Compostela, que se converteu no centro da vida relixiosa e cultural da
+          cidade.
+        </p>
+        <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
+        <div id="contenido2">
+          <p>
+            O descubrimento dos restos de Santiago no século IX transformou a
+            cidade de Santiago de Compostela dunha vila pequena nunha importante
+            cidade de peregrinación. Miles de peregrinos de toda Europa viaxaron
+            a Santiago de Compostela para venerar os restos do apóstolo Santiago
+            e recibir a indulxencia plenaria. A construción da catedral de
+            Santiago de Compostela comezou no século XI, e a igrexa converteuse
+            no centro da vida relixiosa e cultural da cidade.
+          </p>
 
-          <li>
-            <h3>Época Moderna e Contemporánea</h3>
-            <p>
-              A terceira etapa na historia de Santiago de Compostela comezou na
-              época moderna, cando a cidade se converteu nun importante centro
-              comercial e cultural na rexión de Galicia. Durante esta época, a
-              cidade experimentou un renacemento económico e cultural, e
-              construíronse moitos edificios importantes e monumentos na cidade.
-            </p>
-            <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
-            <div id="contenido3">
-              <p>
-                No século XIX, Santiago de Compostela sufriu unha serie de
-                cambios importantes, como a construción do ensanche, que ampliou
-                a cidade e modernizou as súas infraestruturas. Durante a Guerra
-                Civil Española, a cidade sufriu unha serie de danos importantes,
-                incluíndo a destrución de moitos edificios históricos e
-                monumentos.
-              </p>
+          <p>
+            Durante a Idade Media, Santiago de Compostela converteuse nun
+            importante centro de aprendizaxe e cultura. A Universidade de
+            Santiago de Compostela foi fundada en 1495, e a cidade converteuse
+            nun importante centro de estudo da literatura, da filosofía e da
+            teoloxía.
+          </p>
+        </div>
+        <button class="expandir" id="expandir2">Ler máis</button>
+        <h3 id="list-item-4" class="mt-5">Época Moderna e Contemporánea</h3>
+        <p>
+          A terceira etapa na historia de Santiago de Compostela comezou na
+          época moderna, cando a cidade se converteu nun importante centro
+          comercial e cultural na rexión de Galicia. Durante esta época, a
+          cidade experimentou un renacemento económico e cultural, e
+          construíronse moitos edificios importantes e monumentos na cidade.
+        </p>
+        <!--Clickando en el boton expandir 1, se continua mostrando la siguiente informacion-->
+        <div id="contenido3">
+          <p>
+            No século XIX, Santiago de Compostela sufriu unha serie de cambios
+            importantes, como a construción do ensanche, que ampliou a cidade e
+            modernizou as súas infraestruturas. Durante a Guerra Civil Española,
+            a cidade sufriu unha serie de danos importantes, incluíndo a
+            destrución de moitos edificios históricos e monumentos.
+          </p>
 
-              <p>
-                Despois da Guerra Civil, Santiago de Compostela comezou unha
-                nova etapa de crecemento e desenvolvemento económico. A cidade
-                converteuse nun importante centro turístico, grazas á fama do
-                Camiño de Santiago e á súa rica historia e patrimonio cultural.
-                A cidade tamén se converteu nun centro de innovación e
-                tecnoloxía, cunha forte presenza de empresas de alta tecnoloxía
-                e investigación.
-              </p>
-            </div>
-            <button id="expandir3">Ler máis</button>
-          </li>
-        </ul>
+          <p>
+            Despois da Guerra Civil, Santiago de Compostela comezou unha nova
+            etapa de crecemento e desenvolvemento económico. A cidade
+            converteuse nun importante centro turístico, grazas á fama do Camiño
+            de Santiago e á súa rica historia e patrimonio cultural. A cidade
+            tamén se converteu nun centro de innovación e tecnoloxía, cunha
+            forte presenza de empresas de alta tecnoloxía e investigación.
+          </p>
+        </div>
+        <button class="expandir" id="expandir3">Ler máis</button>
       </section>
     </main>
 

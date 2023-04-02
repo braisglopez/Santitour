@@ -1,0 +1,36 @@
+<TOURS>
+    <TOUR>
+        <TITULO>Visita arquitectónica á Cidade da Cultura</TITULO>
+        <DESCRICION>Unha visita guiada para achegarse á arquitectura contemporánea e deixarse ​​sorprender polas liñas e volumes deseñados polo neoiorquino Peter Eisenman na Cidade da Cultura de Galicia, en Santiago de Compostela. Desde admirar a espectacular fachada acristalada de case 43 metros de altura do Museo do Centro do Gaiás, ata comprender dunha ollada a interacción de liñas e volumes que conforman o deseño da Cidade da Cultura e os usos e fitos do conxunto arquitectónico. Un percorrido entretido e informativo no que tamén poderás descubrir a monumental praza central, os espazos verdes do monte Gaiás e gozar dunhas vistas panorámicas de Santiago de Compostela desde esta atalaia onde conflúen natureza e arte.</DESCRICION>
+        <HORARIO>Sábado, festivos, Semana Santa</HORARIO>
+        <LUGAR>Punto de Información Cidade da Cultura de Galicia, Museo Centro Gaias, Monte Gaiás, s/n, Santiago de Compostela, 15892</LUGAR>
+        <IDIOMAS>español, galego</IDIOMAS>
+        <PREZO>Gratis</PREZO>
+        <IMAXE1>../imagenes/rutas_tours/tour1.jpg</IMAXE1>
+    </TOUR>
+
+    <TOUR>
+        <TITULO>Santiago Experience Noche: Tour, cea e queimada</TITULO>
+        <DESCRICION>Esta experiencia nocturna de Santiago inclúe moitas actividades para vivir o ambiente nocturno de Santiago a través de restaurantes, bares e a típica Queimada. Farás todo isto cun guía local experto. O percorrido dura unhas 4 horas a partir das 20:30 cun percorrido especial para descubrir a cidade pola noite e escoitar as lendas e historias de espíritos e meigas. Ás 22:00 horas, cea nun restaurante típico galego degustando os pratos máis famosos. Ao rematar a cea espéravos unha sorpresa, viviremos unha das experiencias máis místicas de Galicia: A Queimada, unha cunca de lume que foi, e segue sendo, coñecida polas súas propiedades máxicas para eliminar os malos espíritos.</DESCRICION>
+        <HORARIO>20:30</HORARIO>
+        <LUGAR>Praza do Obradoiro, Santiago de Compostela, 15704</LUGAR>
+        <IDIOMAS>español, english, français, italiano</IDIOMAS>
+        <PREZO>75€</PREZO>
+        <IMAXE1>../imagenes/rutas_tours/tour4.jpg</IMAXE1>
+    </TOUR>
+
+    <TOUR>
+        <TITULO>Santiago Experience Día: Tour e gastronomía galega</TITULO>
+        <DESCRICION>Descubre os segredos de Santiago de Compostela neste percorrido a pé. Esta experiencia durará unhas 4 horas con diferentes actividades. Fai un percorrido a pé polo Parque do Casco Antigo e da Alameda coas mellores vistas da catedral. Despois, disfruta de aperitivos nun famoso restaurante onde degustarás a tortilla española máis deliciosa da cidade con viño ou cervexa galega (tamén hai dispoñibles refrescos, como refrescos, zumes e auga). Xantar nun restaurante típico galego cun dos pratos máis famosos como é o "Pulpo á feira".</DESCRICION>
+        <HORARIO>10:30</HORARIO>
+        <LUGAR>Praza do Obradoiro, Santiago de Compostela, 15704</LUGAR>
+        <IDIOMAS>español, english, français, italiano</IDIOMAS>
+        <PREZO>65€</PREZO>
+        <IMAXE1>../imagenes/rutas_tours/tour7.jpg</IMAXE1>
+    </TOUR>
+
+</TOURS>
+    
+    
+    
+

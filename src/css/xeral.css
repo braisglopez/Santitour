@@ -3,34 +3,79 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNowText-ExtraLight.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNowText-Light.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNow_Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNowText-Medium.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNowText-Bold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("../fontes/HelveticaNowText-ExtraBold.ttf");
+  font-weight: 600;
+}
+
 body {
   background-color: white;
+  font-family: "Helvetica Now", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 220%;
   font-weight: bold;
-  background-color: dark;
-  color: white;
-  padding: 10px 0px 0px 0px;
-  font-family: Georgia, Geneva, Arial, sans-serif;
+  padding: 10px 0 0 0;
+  font-family: Georgia, "Helvetica Now", Helvetica;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 200%;
   font-weight: bold;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;
-  text-align: center;
-  font-family: Georgia, Geneva, Arial, sans-serif;
+  font-family: Georgia, "Helvetica Now", Helvetica;
+}
+
+h3 {
+  font-size: 130%;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 110%;
+  font-weight: 300;
 }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 17px;
-  margin: 3% 6% 3% 6%;
-  text-align: justify;
-  /*font-weight: bolder;*/
+  font-size: 100%;
+  font-weight: 300;
+  text-align: left;
 }
 
 .link-inicio {

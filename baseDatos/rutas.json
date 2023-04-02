@@ -1,36 +1,44 @@
 {
   "Rutas": [
     {
-      "titulo": "Camino de Santiago Inglés, completo: Ferrol-Santiago de Compostela",
-      "descripcion": "Camino de Santiago Inglés completo, desde Ferrol a Santiago de Compostela, bien señalizado en general, con 121,78 kms., con un IBP Index medio diario de 62,40 y realizado en 6 etapas.",
+      "titulo": "Camiño de Santiago Inglés, completo: Ferrol-Santiago de Compostela",
+      "descripcion": "Camiño inglés completo de Santiago, de Ferrol a Santiago de Compostela, en xeral ben sinalizado, con 121,78 km, cun Índice IBP diario medio de 62,40 e realizado en 6 etapas.",
       "distancia": "21,78 km",
       "desnivel": "2118 m",
       "valoracion": "4,63",
-      "imaxe": "../imagenes/rutas_tours/ruta1.jpg"
+      "imaxe": "../imagenes/rutas_tours/ruta1.jpg",
+      "coordenadas": ["43.478916", "-8.244463"],
+      "tipo": "senderismo"
     },
     {
       "titulo": "Paseo Río Sarela, Selva Negra, Santiago de Compostela",
-      "descripcion": "Ruta que tiene como protagonistas tierras de Santiago de Compostela. Dejar coches cerca de la cuesta del Convento de San francisco en donde se dispone de amplio aparcamiento. Llegar a la Plaza del Obradoiro y disfrutar de la fachada de la catedral.",
+      "descripcion": "Ruta cuxos protagonistas son as terras de Santiago de Compostela. Deixa os coches preto da ladeira do Convento de San Francisco onde hai amplo aparcamento. Chega á Praza do Obradoiro e disfruta da fachada da catedral.",
       "distancia": "11,39 km",
       "desnivel": "627 m",
       "valoracion": "4,8",
-      "imaxe": "../imagenes/rutas_tours/ruta2.jpg"
+      "imaxe": "../imagenes/rutas_tours/ruta2.jpg",
+      "coordenadas": ["42.884852", "-8.549493"],
+      "tipo": "senderismo"
     },
     {
-      "titulo": "CAMINO PRIMITIVO 5. A Lavacolla-Monte do Gozo- Santiago de Compostela",
-      "descripcion": "Se inicia la andadura en la Iglesia Parroquial de San Paio de Sabugueira, en Lavacolla. Posteriormente se cruzará el Rio Lavacolla y se subirá hasta Vilamaior y después Neiro. Luego se pasa por las instalaciones de la Televisión Gallega, punto más alto de la etapa. Desde este monte ya podemos ver la Catedral de Santiago a unos 5 kilómetros.",
+      "titulo": "CAMIÑO PRIMITIVO 5. A Lavacolla-Monte do Gozo- Santiago de Compostela",
+      "descripcion": "A viaxe comeza na Igrexa Parroquial de San Paio de Sabugueira, en Lavacolla. Posteriormente cruzarase o río Lavacolla que subirá a Vilamaior e despois a Neiro. Despois pasa polas instalacións da Televisión de Galicia, o punto máis alto do escenario. Dende este monte xa podemos ver a Catedral de Santiago a uns 5 quilómetros.",
       "distancia": "11,92 km",
       "desnivel": "146 m",
       "valoracion": "5",
-      "imaxe": "../imagenes/rutas_tours/ruta3.jpg"
+      "imaxe": "../imagenes/rutas_tours/ruta3.jpg",
+      "coordenadas": ["42.898786", "-8.444581"],
+      "tipo": "senderismo"
     },
     {
       "titulo": "Santiago de Compostela - Pico Sacro",
-      "descripcion": "La ida se hace, en sentido inverso, por el último tramo de la Vía de la Plata, en su variante Sanabresa, la ruta de peregrinación que parte de Sevilla. La vuelta a Santiago se hace por la AC-261, con 10 Kms adicionales desde el último punto descrito en la ruta.",
+      "descripcion": "A ida realízase, en sentido contrario, polo último tramo da Vía da Prata, na súa variante Sanabresa, a ruta xacobea que parte de Sevilla. O regreso a Santiago realízase pola AC-261, con 10 km adicionais dende o último punto descrito na ruta.",
       "distancia": "25,72 km",
       "desnivel": "625 m",
       "valoracion": "4,6",
-      "imaxe": "../imagenes/rutas_tours/ruta4.jpg"
+      "imaxe": "../imagenes/rutas_tours/ruta4.jpg",
+      "coordenadas": ["42.807091", "-8.446954"],
+      "tipo": "ciclismo"
     }
   ]
 }

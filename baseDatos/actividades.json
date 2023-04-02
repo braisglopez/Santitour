@@ -1,0 +1,28 @@
+{
+  "Actividades": [
+    {
+      "titulo": "Apúntate a SantYaGo 10K",
+      "data": "29 Abril, 22:00",
+      "descripcion": "Volve a SantYaGo 10K, a carreira nocturna que percorrerá as rúas máis emblemáticas da cidade.",
+      "informacion": "https://www.santyago10k.run/",
+      "imaxe": "../imagenes/actividades/actividad_1.jpg",
+      "tipo": "deportes"
+    },
+    {
+      "titulo": "Semana Santa 2023",
+      "data": "10 Marzo - 16 Abril",
+      "descripcion": "A primavera entra en Santiago de Compostela acompañada polas impresionantes procesións de Semana Santa.",
+      "informacion": "",
+      "imaxe": "../imagenes/actividades/actividad_2.jpg",
+      "tipo": "cultura"
+    },
+    {
+      "titulo": "Sempre Máis. Arte, ecoloxía e protesta na Galiza do Prestige",
+      "data": "31 Marzo - 8 Abril",
+      "descripcion": "Sempre Máis. Arte, ecoloxía e protesta na Galiza do Prestige'.",
+      "informacion": "",
+      "imaxe": "../imagenes/actividades/actividad_3.jpg",
+      "tipo": "cultura"
+    }
+  ]
+}
