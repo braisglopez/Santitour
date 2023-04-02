@@ -172,17 +172,21 @@
           <input
             type="email"
             name="email"
+            id="campoCorreo"
             placeholder="Ingresa o teu correo"
             class="campo"
+            onkeyup="validarCorreo()"
           />
           <textarea
             name="mensaxe"
             placeholder="Ingresa a túa mensaxe"
           ></textarea>
           <input
+            disabled
             type="submit"
             name="enviar"
-            value="enviar mensaxe"
+            id="botonEnviar"
+            value="Enviar mensaxe"
             class="btn-enviar"
           />
         </form>
@@ -195,5 +199,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/contacta.js"></script>
   </body>
 </html>
