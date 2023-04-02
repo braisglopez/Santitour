@@ -1,0 +1,56 @@
+.caja-grande {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.caja-grande > * {
+  flex-basis: 100%;
+}
+
+.caja-1,
+.caja-2,
+.caja-3 {
+  background-color: rgb(220, 220, 220);
+  padding: 1rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: row wrap;
+}
+
+.info {
+  width: 40%;
+  margin-top: 1rem;
+  margin: 0% 6% 3% 6%;
+}
+
+.info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imaxe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin: 0% 6% 3% 18%;
+}
+
+.imaxe-galeria {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.imaxe-galeria.mostrando {
+  opacity: 1;
+}
